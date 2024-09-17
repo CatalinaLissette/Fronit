@@ -1,6 +1,6 @@
 /* Fondo dinámico con expansión y contracción en tonos negro y azul */
 body {
-    background: linear-gradient(45deg, #223a53,  #000000);
+    background: linear-gradient(45deg, #223a53, #000000);
     background-size: 200% 200%;
     animation: expandContractAnimation 10s ease-in-out infinite;
     color: #f8f9fa;
@@ -12,9 +12,11 @@ body {
     0% {
         background-size: 100% 100%;
     }
+
     50% {
         background-size: 250% 250%;
     }
+
     100% {
         background-size: 100% 100%;
     }
@@ -23,17 +25,19 @@ body {
 /*NAVBAR INICIO*/
 /* Estilo futurista de la navbar */
 .navbar {
-    background-color:#031b3b;
+    background-color: #031b3b;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #fac573;
 }
 
-.navbar-brand, .navbar-nav .nav-link {
+.navbar-brand,
+.navbar-nav .nav-link {
     color: #cbdbdf !important;
     transition: color 0.3s ease;
 }
 
-.navbar-brand:hover, .navbar-nav .nav-link:hover {
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
     color: #f8eddd !important;
 }
 
@@ -55,17 +59,21 @@ body {
 
 /* Ajustar tamaño del logo en la barra de navegación */
 .logo-menu {
-    height: 50px;  /* Altura del logo */
-    width: auto;   /* Mantener proporciones */
-    max-width: 150px;  /* Establecer un ancho máximo */
+    height: 50px;
+    /* Altura del logo */
+    width: auto;
+    /* Mantener proporciones */
+    max-width: 150px;
+    /* Establecer un ancho máximo */
 }
+
 /*NAVBAR FINAL*/
 
 
 /*INICIO SECTION*/
 /* Sección de inicio con animaciones futuristas */
 #inicio h1 {
-    color:  #ffcd83;
+    color: #ffcd83;
     text-shadow: 0 0 15px rgba(255, 252, 211, 0.396);
     animation: fadeIn 1.5s ease forwards;
 }
@@ -87,7 +95,8 @@ body {
 
 /* Estilo base del texto */
 .dynamic-text {
-    color: #fac573;  /* Color dorado */
+    color: #fac573;
+    /* Color dorado */
     text-align: center;
     text-shadow: 0 0 15px rgba(255, 252, 211, 0.396);
 }
@@ -104,8 +113,15 @@ body {
 
 /* Animación de entrada suave */
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Secciones con borde y sombra */
@@ -119,33 +135,41 @@ section {
     width: auto;
     max-width: 100%;
 }
+
 .logo-inicio {
-    height: 220px;  /* Ajusta la altura según sea necesario */
-    width: auto;    /* Mantén las proporciones */
-    vertical-align: middle;  /* Alinea el logo con el texto */
+    height: 220px;
+    /* Ajusta la altura según sea necesario */
+    width: auto;
+    /* Mantén las proporciones */
+    vertical-align: middle;
+    /* Alinea el logo con el texto */
     margin-bottom: 20px;
 }
 
 #inicio p.lead {
-    margin-top: -90px;  /* Ajusta este valor según el espacio que necesites */
+    margin-top: -90px;
+    /* Ajusta este valor según el espacio que necesites */
 }
 
 /* Ajuste del tamaño de la fuente del eslogan para pantallas pequeñas */
 @media (max-width: 576px) {
     #inicio p.lead {
-        font-size: 1rem;  /* Tamaño reducido para el eslogan en móviles */
+        font-size: 1rem;
+        /* Tamaño reducido para el eslogan en móviles */
     }
 
     .dynamic-text {
-        font-size: 28px;  /* Ajuste para el texto dinámico */
+        font-size: 28px;
+        /* Ajuste para el texto dinámico */
     }
 }
 
 
-@media (max-width: 576px) and (max-width: 768px){
+@media (max-width: 576px) and (max-width: 768px) {
 
     .logo-inicio {
-        margin-bottom: 30px; /* Reduce el espacio debajo del logo */
+        margin-bottom: 30px;
+        /* Reduce el espacio debajo del logo */
         margin-top: -50px;
     }
 
@@ -153,7 +177,8 @@ section {
 
 @media (max-width: 576px) {
     .dynamic-text {
-        font-size: 32px; /* Ajuste para pantallas pequeñas */
+        font-size: 32px;
+        /* Ajuste para pantallas pequeñas */
     }
 }
 
@@ -173,17 +198,24 @@ section {
     transform: translateY(-10px);
     box-shadow: 0 10px 24px rgba(0, 180, 219, 0.4);
 }
+
 /* SERVICIOS FINAL*/
 
 /*FORMULARIO INICIO*/
 /* Contenedor semi-transparente del formulario */
 .contact-container {
-    background-color: rgba(206, 215, 234, 0.108); /* Fondo semi-transparente */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 40px; /* Espaciado interno */
-    max-width: 800px; /* Ancho máximo */
-    margin: 0 auto; /* Centrado */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    background-color: rgba(206, 215, 234, 0.108);
+    /* Fondo semi-transparente */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    padding: 40px;
+    /* Espaciado interno */
+    max-width: 800px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    /* Centrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra */
 }
 
 
@@ -191,9 +223,12 @@ section {
 .form-control {
     border-radius: 10px;
     border: 2px solid #c3cdda;
-    background: rgba(255, 255, 255, 0.1);  /* Fondo semi-transparente */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque para el fondo */
-    color: #f8f9fa;  /* Color del texto */
+    background: rgba(255, 255, 255, 0.1);
+    /* Fondo semi-transparente */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque para el fondo */
+    color: #f8f9fa;
+    /* Color del texto */
     box-shadow: 0 0 5px rgba(236, 240, 241, 0.592);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -201,25 +236,32 @@ section {
 
 /* Mantener el estilo al hacer foco */
 .form-control:focus {
-    border-color:#f7e1c0 ;
-    background-color: rgba(255, 255, 255, 0.05);  /* Mantener el fondo igual */
-    color:  #f9ead5; /* Mantener el color del texto */
+    border-color: #f7e1c0;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Mantener el fondo igual */
+    color: #f9ead5;
+    /* Mantener el color del texto */
     box-shadow: 0 0 10px rgba(250, 240, 177, 0.8);
 }
 
 /* Validación cuando el campo es incorrecto */
 .form-control.is-invalid {
     border-color: red;
-    background-color: rgba(255, 255, 255, 0.05);  /* Mantener el fondo igual */
-    color: #f8f9fa;  /* Mantener el color del texto */
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Mantener el fondo igual */
+    color: #f8f9fa;
+    /* Mantener el color del texto */
 }
 
 /* Validación cuando el campo es correcto */
 .form-control.is-valid {
     border-color: green;
-    background-color: rgba(255, 255, 255, 0.05);  /* Mantener el fondo igual */
-    color: #f8f9fa;  /* Mantener el color del texto */
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Mantener el fondo igual */
+    color: #f8f9fa;
+    /* Mantener el color del texto */
 }
+
 /*FORMULARIO FINAL*/
 
 
@@ -227,28 +269,37 @@ section {
 /*SOBRENOSOTROS INICIO*/
 /* Estilo general para el apartado "Sobre Nosotros" */
 .sobre-nosotros-card {
-    background: rgba(255, 255, 255, 0.1);  /* Fondo semi-transparente */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque para el fondo */
+    background: rgba(255, 255, 255, 0.1);
+    /* Fondo semi-transparente */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque para el fondo */
     border-radius: 15px;
     padding: 40px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);  /* Sombra suave alrededor */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    /* Sombra suave alrededor */
     max-width: 800px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transición suave para el efecto hover */
     animation: floatCard 6s ease-in-out infinite;
-    text-align: center; /* Centramos todo el contenido dentro de la tarjeta */
+    text-align: center;
+    /* Centramos todo el contenido dentro de la tarjeta */
 }
 
 /* Efecto al pasar el cursor por encima */
 .sobre-nosotros-card:hover {
-    transform: scale(1.05);  /* Aumento de tamaño */
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);  /* Sombra más intensa */
+    transform: scale(1.05);
+    /* Aumento de tamaño */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    /* Sombra más intensa */
 }
 
 /* Título "Sobre Nosotros" */
 .titulo-sobre-nosotros {
     font-size: 2.5rem;
-    color: #fac573; /* Color dorado suave */
-    text-shadow: 2px 2px 10px rgba(250, 197, 115, 0.5); /* Sombra suave en el texto */
+    color: #fac573;
+    /* Color dorado suave */
+    text-shadow: 2px 2px 10px rgba(250, 197, 115, 0.5);
+    /* Sombra suave en el texto */
     margin-bottom: 30px;
 }
 
@@ -257,16 +308,21 @@ section {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #f8f9fa;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil en el texto */
-    max-width: 750px;  /* Máximo ancho para que el texto no sea demasiado ancho */
-    margin: 0 auto;  /* Aseguramos que el texto esté centrado */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil en el texto */
+    max-width: 750px;
+    /* Máximo ancho para que el texto no sea demasiado ancho */
+    margin: 0 auto;
+    /* Aseguramos que el texto esté centrado */
 }
 
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 576px) {
     .sobre-nosotros-card {
-        margin-left: 15px; /* Ajuste de margen a la izquierda */
-        margin-right: 15px; /* Ajuste de margen a la derecha */
+        margin-left: 15px;
+        /* Ajuste de margen a la izquierda */
+        margin-right: 15px;
+        /* Ajuste de margen a la derecha */
     }
 }
 
@@ -276,9 +332,11 @@ section {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -289,48 +347,56 @@ section {
     .titulo-sobre-nosotros {
         font-size: 2rem;
     }
-    
+
     .texto-sobre-nosotros {
         font-size: 1rem;
     }
 }
+
 /*SOBRENOSOTROS FINAL*/
 
 
 
 /*FOOTER SECTION INICIO */
 .footer {
-    background-color: #031b3b;  /* El mismo color que el navbar */
-    color: #f7e1c0;  /* Color claro */
+    background-color: #031b3b;
+    /* El mismo color que el navbar */
+    color: #f7e1c0;
+    /* Color claro */
     padding: 0px 0;
-  }
+}
 
-  
-  .footer h5 {
+
+.footer h5 {
     color: #f7e1c0;
     font-size: 23px;
-  }
-  
-  .footer p, .footer ul li {
-    color:#fff9ef;
+}
+
+.footer p,
+.footer ul li {
+    color: #fff9ef;
     font-size: 20px;
     font-family: 'Dosis', sans-serif;
-  }
+}
 
-  /* Ajuste para que el footer mantenga su estructura en móviles */
+/* Ajuste para que el footer mantenga su estructura en móviles */
 .footer .container {
-    text-align: left; /* Alinear a la izquierda por defecto */
+    text-align: left;
+    /* Alinear a la izquierda por defecto */
 }
 
 .footer .social-icon {
-    margin-right: 15px; /* Espacio entre íconos de redes sociales */
+    margin-right: 15px;
+    /* Espacio entre íconos de redes sociales */
     color: #fff9ef;
     transition: color 0.3s;
 }
+
 .footer .social-icon:hover {
-    color: #f7e1c0 ;  /* Color azul claro al pasar el ratón */
+    color: #f7e1c0;
+    /* Color azul claro al pasar el ratón */
     box-shadow: 0 0 50px rgba(250, 240, 177, 0.8);
-  }
+}
 
 .footer-logo {
     width: 150px;
@@ -341,7 +407,8 @@ section {
 /* Para pantallas pequeñas, ajustamos */
 @media (max-width: 576px) {
     .footer .container {
-        text-align: center; /* Solo centrar en pantallas pequeñas si es necesario */
+        text-align: center;
+        /* Solo centrar en pantallas pequeñas si es necesario */
     }
 
     .footer .col-md-6,
@@ -349,36 +416,55 @@ section {
         margin-bottom: 20px;
     }
 }
-  .mr-icon{
+
+.mr-icon {
     margin-right: 10px;
-  }
-  
-  .footer ul {
+}
+
+.footer ul {
     list-style: none;
     padding-left: 0;
-  }
-  
-  .footer ul li {
+}
+
+.footer ul li {
     margin-bottom: 10px;
-  }
-  /*FINAL FOOTER SECTION*/
+}
+
+.direccion {
+    display: inline-block;
+    /* Mantiene el texto alineado */
+    margin-left: 5px;
+    /* Ajusta el margen para alinear correctamente con el ícono */
+    line-height: 1.5;
+    /* Ajusta la altura de la línea para mejorar el espaciado */
+}
+
+.mr-icon {
+    vertical-align: top;
+    /* Mantiene el ícono alineado con la parte superior del texto */
+    margin-top: 5px;
+    /* Ajusta según sea necesario para perfeccionar la alineación */
+}
 
 
-  
-  .text-center {
+/*FINAL FOOTER SECTION*/
+
+
+
+.text-center {
     text-align: center;
-  }
-  
-  .mbb{
+}
+
+.mbb {
     margin-top: -15px;
     padding-bottom: 20px;
-  }
+}
 
 /*FUENTES INICIO*/
 h2.dosis {
     font-family: 'Dosis', sans-serif;
     font-size: 43px;
-    color: #f3d4a5; 
+    color: #f3d4a5;
 
 }
 
@@ -386,11 +472,12 @@ h5.dosis {
     font-family: 'Dosis', sans-serif;
 }
 
-.subtitulos{
-    color:#81a3cc;
+.subtitulos {
+    color: #81a3cc;
     font-size: 27px;
 
 }
+
 /*FUENTES FIN*/
 
 
@@ -403,11 +490,13 @@ h5.dosis {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #25d366; /* Color verde de WhatsApp */
-    border-radius: 50%; 
+    background-color: #25d366;
+    /* Color verde de WhatsApp */
+    border-radius: 50%;
     width: 60px;
     height: 60px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra para darle efecto de profundidad */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra para darle efecto de profundidad */
     transition: all 0.3s ease;
 }
 
@@ -419,12 +508,15 @@ h5.dosis {
 
 /* Efecto al pasar el cursor sobre el botón */
 .whatsapp-button:hover {
-    transform: scale(1.1); /* Agranda un poco el botón */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+    transform: scale(1.1);
+    /* Agranda un poco el botón */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    /* Aumenta la sombra */
 }
+
 /*WSP FINAL*/
 
-.mt-contact{
+.mt-contact {
     margin-top: 55px;
     margin-bottom: 5px;
 }

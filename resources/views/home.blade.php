@@ -9,7 +9,9 @@
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Estilos personalizados -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
+    <script src="{{ secure_asset('js/home.js') }}"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
@@ -17,7 +19,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Josefin+Sans:wght@400;700&family=Great+Vibes&family=Libre+Baskerville:wght@400;700&family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <script src="js/home.js"></script>
 </head>
 
 <body>
@@ -50,18 +51,18 @@
         </div>
     </nav>
 
-  <!-- Inicio Section -->
-<section id="inicio" class="d-flex justify-content-center align-items-center text-center" style="height: 100vh;">
-    <div>
-        <h1 class="display-3 dynamic-text font-libre">
-            Bienvenido a
-            <img src="{{ asset('css/images/logo-fronit-carrusel.png') }}" alt="Logo Fronit" class="logo-inicio">
-        </h1>
+    <!-- Inicio Section -->
+    <section id="inicio" class="d-flex justify-content-center align-items-center text-center" style="height: 100vh;">
+        <div>
+            <h1 class="display-3 dynamic-text font-libre">
+                Bienvenido a
+                <img src="{{ asset('css/images/logo-fronit-carrusel.png') }}" alt="Logo Fronit" class="logo-inicio">
+            </h1>
 
-        <p class="lead">Tecnología, talento y lealtad para tus ideas.</p>
-        <a href="#servicios" class="btn btn-primary btn-lg mt-4">Nuestros Servicios</a>
-    </div>
-</section>
+            <p class="lead">Tecnología, talento y lealtad para tus ideas.</p>
+            <a href="#servicios" class="btn btn-primary btn-lg mt-4">Nuestros Servicios</a>
+        </div>
+    </section>
 
 
 
@@ -115,15 +116,15 @@
     <section id="contacto" class="py-5">
         <div class="container">
             <div class="contact-container p-4 mt-contact">
-                <h2 class=" text-center mb-4 dosis">Contáctanos</h2>
-                <form id="contactForm" novalidate>
+                <h2 class="text-center mb-4 dosis">Contáctanos</h2>
+                <form id="contactForm" method="POST" action="https://getform.io/f/anleggka">
                     <div class="row mb-3">
-                        <div class="col-md-6 col-sm-12 mb-3"> <!-- Añadí la clase mb-3 para margen en dispositivos móviles -->
+                        <div class="col-md-6 col-sm-12 mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            <input type="text" class="form-control" id="nombre" name="name" required>
                             <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
                         </div>
-                        <div class="col-md-6 col-sm-12 mb-3"> <!-- Añadí la clase mb-3 para margen en dispositivos móviles -->
+                        <div class="col-md-6 col-sm-12 mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                             <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
@@ -131,7 +132,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <textarea class="form-control" id="mensaje" name="message" rows="5" required></textarea>
                         <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
                     </div>
                     <div class="text-center">
@@ -141,6 +142,8 @@
             </div>
         </div>
     </section>
+
+
 
 
 
@@ -156,11 +159,14 @@
 
                 <!-- Contacto -->
                 <div class="col-md-3 ">
-                    <h5 class="text-uppercase mb-3">Contáctenos</h5>
+                    <h5 class="text-uppercase mb-3">Contáctanos</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt mr-icon"></i> Santiago, Chile</li>
-                        <li><i class="fas fa-phone mr-icon"></i> +56 9 7549 7532</li>
-                        <li><i class="fas fa-envelope mr-icon"></i> info@fronit.cl</li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-icon"></i>
+                            <span class="direccion">Los Piñones 100, Providencia,<br>Región Metropolitana.</span>
+                        </li>
+                        <li><i class="fas fa-phone mr-icon"></i> +56 9 2394 6655 </li>
+                        <li><i class="fas fa-envelope mr-icon"></i> contacto@fronit.cl</li>
                     </ul>
                 </div>
 
@@ -168,7 +174,7 @@
                 <div class="col-md-3 ">
                     <h5 class="text-uppercase mb-3">Síguenos</h5>
                     <a href="https://www.linkedin.com/company/fronit" class="social-icon" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a href="#" class="social-icon" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    <a href="https://wa.me/message/IXZXZ6LX4LAKF1" class="social-icon" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
                 </div>
             </div>
         </div>
@@ -197,7 +203,7 @@
     </script>
 
     <!-- Botón de WhatsApp -->
-    <a href="#" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/message/IXZXZ6LX4LAKF1" class="whatsapp-button" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
